@@ -2,7 +2,7 @@
 
 Using SunflowerEditor, you can see the values in your C++ code in realtime. Example:
 
-[](images/example1.png)
+![example](images/example1.png)
 
 SunflowerEditor transforms your C++ code with libclang and compiles it with cppyy. It currently supports seeing the values of printf's inline, but is extremely extensible! 
 
