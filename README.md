@@ -4,7 +4,7 @@ Using SunflowerEditor, you can see values in your C++ code in realtime. Example:
 
 <img src="https://github.com/cameronfr/SunflowerEditorCPP/raw/main/images/example1.png" width=600/>
 
-SunflowerEditor transforms your C++ code with libclang and compiles it with cppyy. It currently supports seeing the values of printf's inline, but it is extremely extensible! 
+SunflowerEditor transforms your C++ code with libclang and compiles it with cppyy. It currently supports seeing the values of `printf`s inline, but it is extremely extensible! 
 
 Contributions extremely welcome! Talk to us in the [Discord](https://discord.gg/zYmm5JuHkW)
 
