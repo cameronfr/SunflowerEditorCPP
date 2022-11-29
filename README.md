@@ -1,10 +1,10 @@
-# SunflowerEditorCPP
+# SunflowerEditorC++
 
-Using SunflowerEditor, you can see the values in your C++ code in realtime. Example:
+Using SunflowerEditor, you can see values in your C++ code in realtime. Example:
 
-![example](images/example1.png)
+<img src="https://github.com/cameronfr/SunflowerEditorCPP/raw/main/images/example1.png" width=600/>
 
-SunflowerEditor transforms your C++ code with libclang and compiles it with cppyy. It currently supports seeing the values of printf's inline, but is extremely extensible! 
+SunflowerEditor transforms your C++ code with libclang and compiles it with cppyy. It currently supports seeing the values of printf's inline, but it is extremely extensible! 
 
 Contributions extremely welcome! Talk to us in the [Discord](https://discord.gg/zYmm5JuHkW)
 
@@ -33,7 +33,7 @@ Finally, edit `llvmDir` on line 8 of `main.py` to match your installation and ru
 You can edit `SunflowerEditorTesting.cpp`, and rerun the following cell to recompile and rerun the C++!
 ```
 _, runtimeTest = defineInNewNs(f"""
-  {includeFile(editorRuntimeDir, fileToRun, runtimeNsName=editorRuntimeNsName, transform=True)}
+  {includeFile(editorRuntimeDir, "SunflowerEditorTesting.cpp", runtimeNsName=editorRuntimeNsName, transform=True)}
 """)
 runtimeTest.doStuff()
 for i in range(100):
