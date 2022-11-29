@@ -6,7 +6,6 @@ import time
 
 editorRuntimeDir = pathlib.Path(__file__).parent.resolve()
 llvmDir = "/opt/homebrew/opt/llvm@14"
-fileToRun = "SunflowerEditorTesting.cpp"
 
 # import jupyter display
 # from IPython.display import display, Javascript, HTML
@@ -179,7 +178,7 @@ editorRuntime.msgserver_init()
 
 #%%# 
 _, runtimeTest = defineInNewNs(f"""
-  {includeFile(editorRuntimeDir, fileToRun, runtimeNsName=editorRuntimeNsName, transform=True)}
+  {includeFile(editorRuntimeDir, "SunflowerEditorTesting.cpp", runtimeNsName=editorRuntimeNsName, transform=True)}
 """)
 runtimeTest.doStuff()
 for i in range(100):
